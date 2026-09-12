@@ -1,0 +1,22 @@
+# Configuración para desplegar FEM salón en Render (https://render.com)
+# En Render: New + -> Blueprint -> elegí este repositorio.
+services:
+  - type: web
+    name: fem-salon
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: TRUST_PROXY
+        value: "1"
+      - key: COOKIE_SECURE
+        value: "1"
+      - key: ADMIN_USER
+        value: admin
+      # Render la pide al crear el servicio: es la clave del panel /admin.
+      - key: ADMIN_PASSWORD
+        sync: false

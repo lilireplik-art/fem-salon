@@ -8,6 +8,26 @@ y la base de datos SQLite que ya vienen incluidos en Node.
 
 ---
 
+## 0. Entregarlo al cliente (publicación con un clic)
+
+Para que el salón lo publique por su cuenta, sin tocar código ni pedirte nada:
+
+1. Subí este proyecto a un repositorio **público** de GitHub.
+2. Armá el enlace de despliegue con la dirección de ese repositorio:
+
+   `https://render.com/deploy?repo=https://github.com/TU-USUARIO/fem-salon`
+
+3. Mandale ese enlace junto con la guía de publicación.
+
+Render lee `render.yaml`, crea el servicio con Node 24 y HTTPS, y le pide una contraseña
+para el panel. El plan gratuito no pide tarjeta. El repositorio tiene que ser público para
+que el botón funcione sin darle acceso a nadie: no contiene datos ni contraseñas.
+
+Documentos que acompañan la entrega: `ENTREGA.md` (alcance), `MANUAL-DEL-PANEL.md` (uso
+del panel) y `DESPLIEGUE.md` (detalle técnico).
+
+---
+
 ## 1. Cómo arrancarlo
 
 ```bash
